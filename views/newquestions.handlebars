@@ -1,0 +1,14 @@
+{{> header}}
+<div class="container">
+<form action="/category/{{data._id}}/questions/new" method="POST">
+    
+ <div class="form-group">
+        <label for="Question">Question:</label>
+<input type="text" name="question" placeholder="question" class="form-control">
+</div>
+<div class="form-group">
+<button type="submit" class="btn btn-success">Submit!</button>   
+    </div>
+</form>
+</div>
+{{> footer}}

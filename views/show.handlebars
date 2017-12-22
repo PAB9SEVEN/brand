@@ -1,0 +1,52 @@
+{{> header }}
+<div class="container">
+<div class="container">
+            <link rel="stylesheet" href="/css/style.css">
+
+    <h4 id="fonts">Form Details</h4>
+
+    <div class="page-header"><a href="/category"><h3 id="fonts"> {{data.category}}</h3></a></div>
+    <div class="jumbotron">
+
+        <form action="/category/{{data._id}}/show/details" method="POST">
+            <div class="page-header"><h3 id="fonts"><i class="glyphicon glyphicon-record"></i><a href="#"> {{data.question}}</a></h3></div> 
+            <div class="form-group">
+        <label for="Weightage">Weightage:</label>
+<input type="Number" name="weightage" placeholder="Weightage" class="form-control">
+</div>
+    
+<div class="form-group">
+        <label for="good_stable_closure">Good stable closure:</label>
+<input type="Number" name="stableClosure" placeholder="Good stable closure" class="form-control">   
+</div>
+
+<div class="form-group">
+        <label for="satisfactory_closure">Satisfactory closure:</label>
+<input type="Number" name="satisfactory" placeholder="Satisfactory closure" class="form-control">
+</div>
+    
+<div class="form-group">
+        <label for="open_findings">Open findings:</label>
+<input type="Number" name="openfindings" placeholder="Open Findings" class="form-control">
+</div>
+    
+<div class="form-group">
+        <label for="score">Score:</label>
+<input type="Number" name="score" placeholder="Score" class="form-control">
+</div>
+    
+    <div class="form-group">
+        <label for="subelement_score">Subelement Score:</label>
+<input type="Number" name="subelement_score" placeholder="Subelement score" class="form-control">
+    </div>
+<div class="form-group">
+        <label for="email">Email</label>
+<input type="email" name="email" placeholder="Enter the email of the person responsible for the action" class="form-control">
+</div>    
+<div class="form-group">
+<button type="submit" class="btn btn-danger"><i class="glyphicon glyphicon-cog"></i> Create Action!</button>   
+    </div>
+        </form>    
+    </div>
+</div>
+{{> footer}}

@@ -1,0 +1,29 @@
+hr{
+    width:300px;
+}
+#brand{
+    border-radius: 0px;
+}
+#loginbtn{
+    background-color:#424851;
+    outline:0px;
+    
+}
+.jumbotron{
+    border-radius:10px;  
+}
+.headers{
+    float:left;
+    padding-bottom: 10px;
+}
+#fonts{
+    font-family:cursive;
+    text-transform: uppercase;
+}
+#btnsize{
+    width:120px;
+    
+}
+#deleteform{
+    display:inline;
+}

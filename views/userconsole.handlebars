@@ -1,0 +1,32 @@
+{{> header }}
+<link href="/styles/css" rel="stylesheet">
+<div class="container">
+<div class="container">
+
+        <div class="jumbotron">
+    {{#each data}}    
+        {{#if isTrue}}
+       <!-- <div class="list-group">
+            <li class="list-group-item list-group-item-action" id="fonts">{{question}}</li>
+-->
+        <h4 id="fonts">{{question}}</h4>
+            <br>
+            {{#each comments}}
+            
+            <div class="panel panel-default">
+  <div class="panel-body">
+      <h5 id="fonts"><i class="glyphicon glyphicon-stop"></i> {{comments}}</h5>
+  </div>
+</div>
+            {{/each}}
+            <a href="/userconsole/{{_id}}/newcomment" class="btn btn-success"><i class="glyphicon glyphicon-pencil"></i> Write comment</a>
+       
+        {{/if}}
+
+        {{/each}}
+            <br>
+        {{data}}
+    </div>
+    </div>    </div>
+
+{{> footer}}

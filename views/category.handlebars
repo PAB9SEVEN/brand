@@ -1,0 +1,23 @@
+{{> header }}
+<div class="container">
+<div class="container">
+                <link rel="stylesheet" href="/css/style.css">
+
+<a href="/category/new" class="btn btn-success"><i class="glyphicon glyphicon-plus"></i> Add new category</a>
+</div>
+<br>
+    <div class="col-md-3 col-sm-6">
+{{#each found}}
+        <div class="thumbnail">
+    <div class="jumbotron">
+     
+        <h3 id="fonts">{{category}}</h3>
+        
+    </div>
+           <center> <a href="/category/{{_id}}/showlist" class="btn btn-info"><i class="glyphicon glyphicon-chevron-right"></i> More Info</a></center>
+        </div>
+    {{/each}}
+
+</div>
+</div>
+{{> footer}}

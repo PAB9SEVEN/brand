@@ -1,0 +1,28 @@
+{{> header}}
+<link href="/css/style.css" rel="stylesheet">
+<div class="container">
+    
+    <a href="/category/{{data._id}}/questions/new" class="btn btn-success"><i class="glyphicon glyphicon-plus-sign"></i> Add new question</a>
+<br><br>
+<div class="jumbotron">
+    {{#each data.questions}}
+    <div class="page-header"><a href="#"><h4 id="fonts"><i class="glyphicon glyphicon-hand-right"></i>     {{question}}</h4></a>
+        
+        {{#if details}}
+        <a href="/category/{{_id}}/editforms" class="btn btn-warning" id="btnsize"><i class="glyphicon glyphicon-edit"></i> Edit Details</a>
+        {{else}}
+        <a href="/category/{{_id}}/showforms" class="btn btn-success" id="btnsize"><i class="glyphicon glyphicon-pencil"></i> Enter Details</a>
+        {{/if}}
+        <form id="deleteform" method="POST" action="/category/{{_id}}/?_method=DELETE">
+            <button class="btn btn-danger" id="btnsize"><i class="glyphicon glyphicon-trash"></i> Delete</button>
+            </form>
+    
+        
+    </div>
+    {{/each}}
+    
+    </div>
+    
+</div>
+
+{{> footer}}

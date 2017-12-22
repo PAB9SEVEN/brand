@@ -1,0 +1,37 @@
+{{> header}}
+<link href="/css/style.css" rel="stylesheet">
+<div class="jumbotron">
+    
+   
+    <div class="container">
+         <h3>Question:</h3><h4 id="fonts">{{data.question}}</h4>
+<form action="/userconsole/{{data.id}}/submit" method="POST">
+                <!--<div class="form-group">
+            <label for="done"></label>
+                <input type="checkbox" name="checklist">Done
+                    </div>
+-->
+                   <div class="form-group">
+                   <label for="comments">Comment:
+                       <!--
+                       <textarea name="comments" class="form-control" placeholder="Comment if any"></textarea>
+-->
+                       <input type="text" class="form-control" placeholder="Comment if any!" name="comments">
+                       </label>
+                   </div>
+                   <div class="form-group">
+                   <label for="isDone">Done:
+                       <!--
+                       <textarea name="comments" class="form-control" placeholder="Comment if any"></textarea>
+-->
+                       <input type="checkbox" class="form-control" name="isDone">
+                       </label>
+                   </div>
+                    <div class="form-group">
+                    <button type="Submit" class="btn btn-success"><i class="glyphicon glyphicon-check"> </i> Submit!</button>
+                    </div>
+                </form>
+    </div>
+            
+    </div>
+{{> footer}}
